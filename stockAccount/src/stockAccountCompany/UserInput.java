@@ -11,6 +11,7 @@ public class UserInput {
     public Set<String> getStocksInExchangeData(){
         return exchangeData.keySet();
     }
+
     public HashMap<String,HashMap<String,Double>> getExchangeData(){
         return exchangeData;
     }
@@ -31,15 +32,19 @@ public class UserInput {
     public void addUserDetails(String user_name,Double balance){
         userDataBase.put(user_name,balance);
     }
+
     public HashMap<String,Double> getAllUserDetails(){
         return userDataBase;
     }
+
     public Set<String> getAllUserNames(){
         return userDataBase.keySet();
     }
+
     public void updateUserBalance(String user_name,Double balance){
         userDataBase.put(user_name,balance);
     }
+
     public Double getUserBalance(String user_name){
         return userDataBase.get(user_name);
     }
@@ -75,6 +80,7 @@ public class UserInput {
     }
 
     private final HashMap<String,HashMap<String,Double>> userStockData = new HashMap<>();
+
     public void setAllStocksSingleUserBought(String stock_name,HashMap<String,Double> val){
         userStockData.put(stock_name,val);
     }
@@ -83,6 +89,7 @@ public class UserInput {
     }
 
 
-
-
 }
+
+//Close
+
